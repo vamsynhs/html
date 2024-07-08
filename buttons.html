@@ -1,14 +1,26 @@
 <style>
    .a{
-    background-color: rgb(200, 0, 0);
-    color: white;
-    border-radius: 2px;
-    width: 100px;
-    height: 35px;
-    border: none;
-    cursor: pointer;
-    margin-right: 8px;
-    margin-bottom: 8px;
+         background-color: rgb(200, 0, 0);
+        color: white;
+        border-radius: 2px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        cursor: pointer;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        transition: opacity 0.2s;
+   }
+   .a:hover{
+        opacity: 0.8;
+   }
+   .a:active{
+        opacity: 0.6;
+        margin-top: 3px;
+        margin-left: 3px;
+        
    }
 
    .b{
@@ -22,6 +34,14 @@
         cursor: pointer;
         border-color:rgb(22, 84, 177);
         margin-right: 8px;
+        transition: background-color 0.2s, color 0.2s;
+    }
+    .b:hover{
+        background-color:  rgb(22, 84, 177);
+        color: white;
+    }
+    .b:active{
+        opacity: 0.5;
     }
 
     .c{
@@ -34,6 +54,17 @@
         border: none;
         font-weight: bold;
         font-size: 15px;
+        
+        transition: box-shadow 0.2s;
+
+    }
+    .c:hover{
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+    .c:active{
+        margin-top: 3px;
+        margin-left: 3px;
+        box-shadow: none;
     }
 
     .d{
@@ -43,6 +74,10 @@
         height: 35px;
         width: 100px;
         cursor: pointer;
+        transition: 0.2s;
+    }
+    .d:hover{
+        opacity: 0.5;
     }
 
     .e{
@@ -54,6 +89,10 @@
         cursor: pointer;
         border: none;
         font-size: 15px;
+        transition: background-color 0.2s;
+    }
+    .e:hover{
+        background-color: rgb(207, 173, 3);
     }
 
     .f{
@@ -67,6 +106,10 @@
         border: none;
         font-size: 15px;
         margin-bottom: 8px;
+        transition: box-shadow 0.2s;
+    }
+    .f:hover{
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
     }
 
     .g{
@@ -80,6 +123,10 @@
         border: none;
         font-size: 15px;
         margin-bottom: 8px;
+        transition: background-color 0.2s;
+    }
+    .g:hover{
+        background-color: rgb(98, 60, 155);
     }
 
     .h{
@@ -94,6 +141,11 @@
         font-size: 15px;
         border-style: solid;
         margin-bottom: 8px;
+        transition: background-color 0.2s, color 0.2s;
+    }
+    .h:hover{
+        background-color: rgb(108, 117, 125);
+        color: white;
     }
 
     .i{
@@ -106,6 +158,10 @@
         font-weight: bold;
         border: none;
         font-size: 15px;
+        transition: background-color 0.2s;
+    }
+    .i:hover{
+        background-color: rgb(12, 86, 160);
     }
 
     .j{
@@ -120,6 +176,11 @@
         font-size: 15px;
         border-style: solid;
         border-width: 1px;
+        transition: background-color 0.2s, border-width 0.2s;
+    }
+    .j:hover{
+        border-width: 2px;
+        background-color: rgb(226, 240, 254);
     }
 </style>
 <button class="a">SUBSCRIBE</button>
